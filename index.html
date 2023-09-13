@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
 
     <body>
         <header class="header">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#" class="logo"><img src="images/fred-p-logo.png"></a>
 
             <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -33,36 +33,38 @@
                 <h3>Hello, It's Me</h3>
                 <h1>Fred Pekyi</h1>
                 <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis doloremque, libero sint incidunt laudantium rerum temporibus. Iure, delectus veniam esse eligendi reiciendis voluptas asperiores laudantium, nihil sapiente aut doloremque nobis?</p>
+                <p>I am an ambitious and detail-oriented computer engineering student with a passion for pushing the boundaries of technology. My goal is to leverage my skills and knowledge to drive innovation and create impactful solutions in the fields of hardware and software engineering.</p>
+                <p>Currently pursuing my Bachelors degree in Computer Engineering at Kwame Nkrumah University of Science and Technology, I have gained a solid foundation in a range of technical skills, including programming languages such as C and C++.</p>
                 <div class="social-media">
-                    <a href="#"><i class='bx bxl-telegram' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#contact"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://twitter.com/PekyiFred" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/dela_fred_p/?__coig_restricted=1" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/fred-pekyi-a5879726b" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                 </div>
-                <a href="#" class="btn">Download CV</a>
+                <a href="https://drive.google.com/file/d/1GutXne9cAYiULlYc--b_GgpMGLH6ZcXL/view?usp=sharing" class="btn">Download CV</a>
             </div>
             <div class="home-img">
-                <img src="images/home.png">
+                <img src="images/profile 2.png">
             </div>
         </section>
 
         <!--About section Design-->
         <section class="about" id="about">
             <div class="about-img">
-                <img src="images/about.png" alt="">
+                <img src="images/profile 2.png" alt="">
             </div>
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
                 <h3>Web Developer!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae architecto reprehenderit quas cumque repellendus inventore ullam odio voluptate ea blanditiis, est esse voluptatibus. Ab velit error voluptas quidem odio provident iste rerum enim nesciunt, modi veniam illum eos itaque perferendis, adipisci perspiciatis recusandae commodi qui!</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I am an ambitious and detail-oriented computer engineering student with a passion for pushing the boundaries of technology. My goal is to leverage my skills and knowledge to drive innovation and create impactful solutions in the fields of hardware and software engineering.</p>
+                <p>Currently pursuing my Bachelors degree in Computer Engineering at Kwame Nkrumah University of Science and Technology, I have gained a solid foundation in a range of technical skills, including programming languages such as C, C++, HTML & CSS, MATLAB and JavaScript</p>
+                <a href="https://drive.google.com/file/d/1GutXne9cAYiULlYc--b_GgpMGLH6ZcXL/view?usp=sharing" class="btn">Read More</a>
             </div>
         </section>
 
         <!--Services section design-->
         <section class="services" id="services">
-            <h2 class="heading" >Our <span>Services</span></h2>
+            <h2 class="heading" >My <span>Services</span></h2>
             <div class="services-container">
                 <div class="services-box">
                     <i class='bx bx-code-alt' ></i>
@@ -156,18 +158,26 @@
         <!--contact section design-->
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me:</span></h2>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+            <div class="contact-page-box">
+                <div class="contact-page-icon">
+                    <i class='bx bx-phone' ></i>
+                    <p>+233 555840604</p>
+                    <i class='bx bxl-whatsapp' ></i>
+                    <p>+233 202955714</p>
                 </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
+                <form action="contact.php" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name">
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="mobile" placeholder="Mobile Number">
+                        <input type="text" name="Subject" placeholder="Email Subject">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
         </section>
 
         <!--Footer design-->

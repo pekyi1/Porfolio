@@ -46,6 +46,9 @@ section{
     align-items: center;
     z-index: 100;
 }
+.header a img{
+    width: 15rem;
+} 
 
 .header .sticky{
     border-bottom: 1rem solid rgba(0, 0, 0, .2);
@@ -115,7 +118,7 @@ section{
 
 .home-content p{
     font-size: 1.6rem;
-
+    margin-bottom: 8px;
 }
 
 span {
@@ -323,6 +326,7 @@ span {
 }
 
 .contact form{
+    width: 100%;
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -358,6 +362,28 @@ span {
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.contact-page-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-page-icon i{
+    font-size: 3rem;
+    margin-left: 35px;
+}
+.contact-page-icon p{
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--main-color);
 }
 
 .footer{
