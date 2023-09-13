@@ -2,44 +2,194 @@
 <html>
     <head>
         <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatib1e" content="IE=edge">
-    <meta name="viewport" content="width-device-width,initial-scale-1.0" >
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio Website</title>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
+
+
     <body>
         <header class="header">
-            <a href="#" class="logo">F. Pekyi</a>
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
             <nav class="navbar">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </nav>
-
         </header>
-        <section class="home">
-            <div class="home-image">
-                <img src="images/profile.png" alt="">
-            </div>
+
+        <!--home section desion-->
+        <section class="home" id="home">
             <div class="home-content">
-                <h1>Hi, I'm Fred Pekyi</h1>
-                <h3>Full Stack Developer</h3>
-                <p>I am an ambitious and detail-oriented computer engineering student with a passion for pushing the boundaries of technology. My goal is to leverage my skills and knowledge to drive innovation and create impactful solutions in the fields of hardware and software engineering.
-                </p1>
-                <p class="p2">Currently pursuing my Bachelors degree in Computer Engineering at Kwame Nkrumah University of Science and Technology, I have gained a solid foundation in a range of technical skills, including programming languages such as C and C++.</p2>
-
-                <div class="home-sci">
-                    <a href="#" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://twitter.com/PekyiFred" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.instagram.com/dela_fred_p/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a href="https://www.linkedin.com/in/fred-pekyi-a5879726b" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <h3>Hello, It's Me</h3>
+                <h1>Fred Pekyi</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis doloremque, libero sint incidunt laudantium rerum temporibus. Iure, delectus veniam esse eligendi reiciendis voluptas asperiores laudantium, nihil sapiente aut doloremque nobis?</p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-telegram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
                 </div>
-
-                <a href="https://drive.google.com/file/d/1GutXne9cAYiULlYc--b_GgpMGLH6ZcXL/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="images/home.png">
             </div>
         </section>
+
+        <!--About section Design-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Web Developer!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae architecto reprehenderit quas cumque repellendus inventore ullam odio voluptate ea blanditiis, est esse voluptatibus. Ab velit error voluptas quidem odio provident iste rerum enim nesciunt, modi veniam illum eos itaque perferendis, adipisci perspiciatis recusandae commodi qui!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!--Services section design-->
+        <section class="services" id="services">
+            <h2 class="heading" >Our <span>Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sapiente quas voluptate esse repellendus nisi ratione eveniet tempora consequatur molestias?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            
+
+            
+                <div class="services-box">
+                    <i class='bx bxs-paint' ></i>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sapiente quas voluptate esse repellendus nisi ratione eveniet tempora consequatur molestias?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+        
+
+        
+                <div class="services-box">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sapiente quas voluptate esse repellendus nisi ratione eveniet tempora consequatur molestias?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        
+        </section>
+
+        <!--Portfolio Section Desion-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/portfolio1.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/portfolio2.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/portfolio3.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/portfolio4.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/portfolio5.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/portfolio6.jpg">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, molestias.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact section design-->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me:</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!--Footer design-->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Fred Pekyi | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <!--Scroll receal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--typed js-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+
+        <!--custom js-->
+        <script src="js/script.js"></script>
     </body>
 </html>
