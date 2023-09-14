@@ -39,13 +39,14 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
+
 .header img{
     width: 15rem;
 } 
@@ -530,14 +531,24 @@ span {
     .contact form .input-box input{
         width: 100%;
     }
+
+    .contact-page-icon p{
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width:365px){
+
+
+@media (max-width:365px) and (max-width:376px){
     .home-img img{
         width: 90vw;
     }
     .about-img img{
         width: 90vw;
+    }
+
+    .header {
+       padding: 0;
     }
 
     .footer {
