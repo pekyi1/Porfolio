@@ -35,6 +35,7 @@ section{
 }
 
 .header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
@@ -174,7 +175,10 @@ span {
 }
 
 .about-img img{
-    width: 35vw;
+    margin-right: 15px;
+    width: 25vw;
+    border-radius: 50px;
+    box-shadow: 15px 15px 20px var(--main-color);
 }
 
 .heading {
