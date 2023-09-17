@@ -547,14 +547,14 @@ span {
 
 @media (max-width:365px) and (max-width:376px){
     .home-img img{
-        width: 90vw;
+        width: 120vw;
     }
     .about-img img{
-        width: 90vw;
+        width: 75vw;
     }
 
     .header {
-       padding: 0;
+       padding: 10px;
     }
 
     .footer {
