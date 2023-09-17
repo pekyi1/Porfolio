@@ -545,7 +545,7 @@ span {
 
 
 
-@media (max-width:365px) and (max-width:376px){
+@media (max-width:365px){
     .home-img img{
         width: 120vw;
     }
@@ -563,5 +563,11 @@ span {
     .footer p{
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width:375){
+    .home-img img{
+        width: 120vw;
     }
 }
