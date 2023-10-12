@@ -180,51 +180,7 @@ span {
 
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 25vw;
-  height: 31vw;
-  margin-right: 15px;
-  border: none;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-  .about-image{
-    box-shadow: 15px 15px 20px var(--main-color);
-   width: 25vw;
-   border-radius: 50px;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
- 
-  
-  /* Style the back side */
-  .flip-box-back {
-    transform: rotateY(180deg);
-  }
+
 
 .heading {
     text-align: center;
@@ -245,6 +201,13 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+.about-image{
+    box-shadow: 15px 15px 20px var(--main-color);
+   width: 25vw;
+   border-radius: 50px;
+  }
+
 
 .services h2{
     margin-bottom: 5rem;
@@ -472,6 +435,56 @@ span {
     html{
         font-size: 55%;
     }
+
+    
+}
+
+@media (min-width: 900px){
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 25vw;
+    height: 31vw;
+    margin-right: 15px;
+    border: none;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+    .about-image{
+      box-shadow: 15px 15px 20px var(--main-color);
+     width: 25vw;
+     border-radius: 50px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+      position: static;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+   
+    
+    /* Style the back side */
+    .flip-box-back {
+      transform: rotateY(180deg);
+    }
 }
 
 @media (max-width:991px){
@@ -583,6 +596,17 @@ span {
 
     .contact-page-icon p{
         font-size: 1.5rem;
+    }
+    .flip-box-container{
+        display: flex;
+        flex-direction: column;
+        flex: 1fr 1fr;
+    }
+    .flip-box-front{
+        left: 0;
+        width: fit-content;
+        height: fit-content;
+        
     }
 }
 
