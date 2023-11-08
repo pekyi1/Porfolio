@@ -278,6 +278,7 @@ span {
 }
 
 .portfolio-box img{
+    height: 100%;
     width: 100%;
     transition: .5s ease;
 }
@@ -316,6 +317,9 @@ span {
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    color: #323946;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .portfolio-layer a{
